@@ -3,7 +3,6 @@ from django.utils import timezone
 from accounts.models import Users
 from events.models import Events
 
-
 class FavoriteEvents(models.Model):
     user_id = models.ForeignKey(Users, on_delete=models.CASCADE)
     event_id = models.ForeignKey(Events, on_delete=models.CASCADE)
